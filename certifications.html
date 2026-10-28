@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f2eb">
+    <title>Credentials — Dev Charan Sai P</title>
+    <meta name="description" content="Course certificates and digital badges in AI engineering, machine learning, computer vision, and related fields.">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" id="top">
+        <nav class="nav-shell" aria-label="Main navigation">
+            <a class="wordmark" href="index.html" aria-label="Dev Charan Sai P, home">D<span>.</span></a>
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation"><span></span><span></span></button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a class="nav-link" href="index.html">Home</a></li><li><a class="nav-link" href="index.html#about">About</a></li><li><a class="nav-link" href="index.html#skills">Skills</a></li><li><a class="nav-link" href="projects.html">Projects</a></li><li><a class="nav-link active" href="certifications.html" aria-current="page">Credentials</a></li><li><a class="nav-link" href="index.html#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme"><svg id="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg></button>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section class="page-intro page-wrap" aria-labelledby="page-title">
+            <p class="eyebrow"><span class="eyebrow-rule"></span> Learning archive</p>
+            <h1 id="page-title">Courses <span>&amp; Credentials</span></h1>
+            <p class="page-lede">A record of completed study in AI engineering, machine learning, computer vision and related areas. Course certificates and digital badges are identified separately.</p>
+        </section>
+        <section class="credential-section page-wrap" aria-labelledby="featured-title">
+            <div class="archive-heading"><div><p class="eyebrow">01 / Selected</p><h2 id="featured-title">Featured credentials</h2></div></div>
+            <div class="featured-certs-grid" id="featured-certs-grid"></div>
+        </section>
+        <section class="credential-section page-wrap" aria-labelledby="courses-title">
+            <div class="archive-heading"><div><p class="eyebrow">02 / Course completion</p><h2 id="courses-title">Course certificates</h2></div></div>
+            <div class="certs-grid" id="certs-grid"></div>
+        </section>
+        <section class="credential-section badges-section page-wrap" aria-labelledby="badges-title">
+            <div class="archive-heading"><div><p class="eyebrow">03 / Digital credentials</p><h2 id="badges-title">Digital badges</h2></div></div>
+            <div class="badges-grid" id="badges-grid"></div>
+        </section>
+    </main>
+    <div class="modal" id="cert-modal" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title" aria-hidden="true" hidden>
+        <button class="modal-backdrop" id="cert-modal-backdrop" type="button" aria-label="Close credential preview"></button>
+        <div class="modal-panel modal-panel--large">
+            <button class="modal-close" id="cert-modal-close" type="button" aria-label="Close credential preview">Close <span aria-hidden="true">×</span></button>
+            <div class="modal-content" id="cert-modal-content"></div>
+        </div>
+    </div>
+    <footer class="site-footer"><div class="page-wrap footer-inner">
+        <a class="wordmark footer-mark" href="index.html" aria-label="Dev Charan Sai P, home">D<span>.</span></a><p>Dev Charan Sai P <span>·</span> <span id="current-year">2026</span></p>
+        <div class="footer-social" aria-label="Social links">
+            <a class="footer-social-link" href="https://linkedin.com/in/dev-charan-sai-p-152938231" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 8.7H2.1V22h3.1V8.7ZM3.65 2a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6ZM22 14.4c0-4-2.1-5.9-4.9-5.9a4.2 4.2 0 0 0-3.8 2.1V8.7h-3V22h3.1v-6.6c0-1.7.3-3.4 2.5-3.4s2.2 2 2.2 3.5V22H22v-7.6Z"></path></svg></a>
+            <a class="footer-social-link" href="https://github.com/DevCharanSaiP" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.2 11.2 0 0 0-3.54 21.82c.56.1.77-.24.77-.54v-2.1c-3.14.68-3.8-1.33-3.8-1.33-.5-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 1.72 2.61 1.22 3.25.93.1-.73.39-1.22.71-1.5-2.5-.29-5.13-1.25-5.13-5.57 0-1.23.44-2.24 1.16-3.03-.12-.29-.5-1.43.11-2.98 0 0 .95-.3 3.08 1.16a10.7 10.7 0 0 1 5.6 0c2.14-1.46 3.08-1.16 3.08-1.16.61 1.55.23 2.69.12 2.98.72.79 1.15 1.8 1.15 3.03 0 4.33-2.64 5.28-5.15 5.56.4.35.76 1.03.76 2.08v3.1c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .9Z"></path></svg></a>
+            <a class="footer-social-link" href="mailto:devcharansaip@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5h18a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H3A1.5 1.5 0 0 1 1.5 17V7A1.5 1.5 0 0 1 3 5.5Zm-.1 2.1 9.1 6.2 9.1-6.2"></path></svg></a>
+        </div>
+        <a class="text-link footer-back" href="#top">Back to top ↑</a>
+    </div></footer>
+</body>
+</html>

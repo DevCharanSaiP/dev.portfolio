@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f2eb">
+    <title>Projects & Patents — Dev Charan Sai P</title>
+    <meta name="description" content="Academic and personal machine learning projects, research experiments, and patent projects by Dev Charan Sai P.">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" id="top">
+        <nav class="nav-shell" aria-label="Main navigation">
+            <a class="wordmark" href="index.html" aria-label="Dev Charan Sai P, home">D<span>.</span></a>
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation"><span></span><span></span></button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a class="nav-link" href="index.html">Home</a></li><li><a class="nav-link" href="index.html#about">About</a></li><li><a class="nav-link" href="index.html#skills">Skills</a></li><li><a class="nav-link active" href="projects.html" aria-current="page">Projects</a></li><li><a class="nav-link" href="certifications.html">Credentials</a></li><li><a class="nav-link" href="index.html#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme"><svg id="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg></button>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section class="page-intro page-wrap" aria-labelledby="page-title">
+            <p class="eyebrow"><span class="eyebrow-rule"></span> Work archive</p>
+            <h1 id="page-title">Projects <span>&amp; patents</span></h1>
+            <p class="page-lede">Academic work, personal experiments and invention projects—organized by the work itself, not just the tools used.</p>
+        </section>
+        <section class="project-browser" aria-label="Browse projects">
+            <div class="page-wrap">
+                <div class="project-tools">
+                    <label class="search-field"><span class="sr-only">Search projects</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input id="project-search" type="search" placeholder="Search projects" autocomplete="off"></label>
+                    <div class="filter-bar" role="group" aria-label="Filter projects by topic">
+                        <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true">All work</button>
+                        <button class="filter-chip" type="button" data-filter="deployed" aria-pressed="false">Deployed</button>
+                        <button class="filter-chip" type="button" data-filter="machine-learning" aria-pressed="false">Machine learning</button>
+                        <button class="filter-chip" type="button" data-filter="deep-learning" aria-pressed="false">Deep learning</button>
+                        <button class="filter-chip" type="button" data-filter="federated-learning" aria-pressed="false">Federated learning</button>
+                        <button class="filter-chip" type="button" data-filter="computer-vision" aria-pressed="false">Computer vision</button>
+                        <button class="filter-chip" type="button" data-filter="medical-ai" aria-pressed="false">Medical AI</button>
+                        <button class="filter-chip" type="button" data-filter="llm" aria-pressed="false">LLM</button>
+                        <button class="filter-chip" type="button" data-filter="agentic-ai" aria-pressed="false">Agentic AI</button>
+                        <button class="filter-chip" type="button" data-filter="gen-ai" aria-pressed="false">Generative AI</button>
+                        <button class="filter-chip" type="button" data-filter="iot" aria-pressed="false">IoT</button>
+                        <button class="filter-chip" type="button" data-filter="patent" aria-pressed="false">Patent</button>
+                    </div>
+                </div>
+                <p class="results-count" id="project-results" aria-live="polite"></p>
+                <div class="project-archive">
+                    <section class="category-section" id="academic-projects" data-project-category="academic" aria-labelledby="academic-title">
+                        <div class="category-heading"><p class="eyebrow">01 / Coursework &amp; research</p><h2 id="academic-title">Academic projects</h2></div>
+                        <div class="projects-grid" id="academic-grid"></div>
+                    </section>
+                    <section class="category-section" id="personal-projects" data-project-category="personal" aria-labelledby="personal-title">
+                        <div class="category-heading"><p class="eyebrow">02 / Independent work</p><h2 id="personal-title">Personal projects</h2></div>
+                        <div class="projects-grid" id="personal-grid"></div>
+                    </section>
+                    <section class="category-section" id="patents" data-project-category="patents" aria-labelledby="patents-title">
+                        <div class="category-heading"><p class="eyebrow">03 / Invention projects</p><h2 id="patents-title">Patents</h2></div>
+                        <div class="projects-grid" id="patents-grid"></div>
+                    </section>
+                </div>
+                <p class="empty-state" id="project-empty" hidden>No projects match that search. Try another term or filter.</p>
+            </div>
+        </section>
+    </main>
+    <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true" hidden>
+        <button class="modal-backdrop" id="modal-backdrop" type="button" aria-label="Close project details"></button>
+        <div class="modal-panel">
+            <button class="modal-close" id="modal-close" type="button" aria-label="Close project details">Close <span aria-hidden="true">×</span></button>
+            <div class="modal-content" id="modal-content"></div>
+        </div>
+    </div>
+    <footer class="site-footer"><div class="page-wrap footer-inner">
+        <a class="wordmark footer-mark" href="index.html" aria-label="Dev Charan Sai P, home">D<span>.</span></a><p>Dev Charan Sai P <span>·</span> <span id="current-year">2026</span></p>
+        <div class="footer-social" aria-label="Social links">
+            <a class="footer-social-link" href="https://linkedin.com/in/dev-charan-sai-p-152938231" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 8.7H2.1V22h3.1V8.7ZM3.65 2a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6ZM22 14.4c0-4-2.1-5.9-4.9-5.9a4.2 4.2 0 0 0-3.8 2.1V8.7h-3V22h3.1v-6.6c0-1.7.3-3.4 2.5-3.4s2.2 2 2.2 3.5V22H22v-7.6Z"></path></svg></a>
+            <a class="footer-social-link" href="https://github.com/DevCharanSaiP" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.2 11.2 0 0 0-3.54 21.82c.56.1.77-.24.77-.54v-2.1c-3.14.68-3.8-1.33-3.8-1.33-.5-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 1.72 2.61 1.22 3.25.93.1-.73.39-1.22.71-1.5-2.5-.29-5.13-1.25-5.13-5.57 0-1.23.44-2.24 1.16-3.03-.12-.29-.5-1.43.11-2.98 0 0 .95-.3 3.08 1.16a10.7 10.7 0 0 1 5.6 0c2.14-1.46 3.08-1.16 3.08-1.16.61 1.55.23 2.69.12 2.98.72.79 1.15 1.8 1.15 3.03 0 4.33-2.64 5.28-5.15 5.56.4.35.76 1.03.76 2.08v3.1c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .9Z"></path></svg></a>
+            <a class="footer-social-link" href="mailto:devcharansaip@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5h18a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H3A1.5 1.5 0 0 1 1.5 17V7A1.5 1.5 0 0 1 3 5.5Zm-.1 2.1 9.1 6.2 9.1-6.2"></path></svg></a>
+        </div>
+        <a class="text-link footer-back" href="#top">Back to top ↑</a>
+    </div></footer>
+</body>
+</html>
